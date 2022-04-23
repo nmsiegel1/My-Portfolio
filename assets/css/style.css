@@ -12,6 +12,11 @@
 body {
     color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(211, 227, 240);
+}
+
+section {
+    padding: 60px;
 }
 
 /* Apply styles to header */
@@ -61,10 +66,6 @@ header nav ul li a {
     font-weight: lighter;
 }
 
-section {
-    padding: 200px;
-}
-
 /* Apply styles to Hero */
 .hero {
     background-image: url("../images/mountains.jpeg");
@@ -75,6 +76,7 @@ section {
     align-items: flex-end;
     background-attachment: fixed;
     background-position: 65%;
+    padding: 200px;
 }
 
 .subtitle {
@@ -82,9 +84,38 @@ section {
     background-color: var(--background-color);
     padding: 5px;
     width: 45%;
-    height: 10%;
     margin: -26.5%;
-    border-radius: 15px;
+    border-radius: 7px;
     font-size: 25px;
     justify-content: flex-end;
+}
+
+/* Bio section begins  */
+.section-title {
+    font-size: 40px;
+    border-right: 3px solid;
+    padding-right: 140px;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto 35px auto;
+    justify-content: center;
+
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio p {
+    line-height: 1.7;
+    width: 100%;
+    font-size: 17px;
+    margin: 0 auto;
+    text-align: left;
+
 }
