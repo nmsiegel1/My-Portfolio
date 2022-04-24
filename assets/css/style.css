@@ -119,3 +119,26 @@ header nav ul li a {
     text-align: left;
 
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+.fa-linkedin {
+    background: #0e76a8;
+    color: white
+}
+
+.fa-github {
+    background: #171515;
+    color: white;
+}
