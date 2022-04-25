@@ -53,7 +53,7 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul, footer nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,7 +61,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a, footer nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
 }
@@ -83,8 +83,8 @@ header nav ul li a {
     border: 3px solid var(--background-color);
     background-color: var(--background-color);
     padding: 5px;
-    width: 45%;
-    margin: -26.5%;
+    width: 28%;
+    margin: -12.5%;
     border-radius: 7px;
     font-size: 25px;
     justify-content: flex-end;
@@ -120,10 +120,50 @@ header nav ul li a {
 
 }
 
+/* My work section begins  */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.smaller-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 0 400px;
+    justify-content: space-evenly;
+}
+
+.work {
+    border: 5px solid navy;
+    text-align: center;
+    padding: 10px;
+    background-color: navy;
+    margin: 20px;
+}
+
+.main-project {
+    width: 75%;
+}
+/* Footer/Contact me section begins */
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer nav {
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .fa {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
-    width: 30px;
+    width: 35px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
