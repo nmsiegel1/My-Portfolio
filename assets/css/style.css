@@ -4,7 +4,6 @@
     --secondary-text: rgb(49, 49, 28);
     --border-color: rgb(59, 143, 73);
     --hover-text: rgb(119, 156, 166, .45);
-    --hover-img:
 }
 
 * {
@@ -75,7 +74,7 @@ header nav ul li a:hover {
 }
 /* Apply styles to Hero */
 .hero {
-    background-image: url("../images/mountains.jpeg");
+    background-image: url("../Images/mountains.jpeg");
     background-size: cover;
     display: flex;
     justify-content: right;
@@ -106,6 +105,7 @@ header nav ul li a:hover {
     width: 50%;
     margin: 0 auto 35px auto;
     justify-content: center;
+    
 }
 
 .primary-border {
