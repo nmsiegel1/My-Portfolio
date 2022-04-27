@@ -74,7 +74,7 @@ header nav ul li a:hover {
 }
 /* Apply styles to Hero */
 .hero {
-    background-image: url("../Images/mountains.jpeg");
+    background-image: url("../Images/Mountains.jpeg");
     background-size: cover;
     display: flex;
     justify-content: right;
@@ -103,13 +103,17 @@ header nav ul li a:hover {
     padding-right: 140px;
     text-align: left;
     width: 50%;
-    margin: 0 auto 35px auto;
     justify-content: center;
-    
+    margin: 3%;
+}
+
+h2 {
+    margin: 5% auto 15% auto;
 }
 
 .primary-border {
     border-color: var(--primary-color);
+    margin-right: 10%;
 }
 
 .bio {
@@ -141,20 +145,40 @@ main {
     justify-content: space-evenly;
 }
 
-.work {
-    border: 5px solid var(--border-color);
-    text-align: center;
+.container {
+    position: relative;
     padding: 10px;
-    background-color: var(--border-color);
     margin: 20px;
 }
+
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    background-color: var(--border-color);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .text-block-1 {
+    position: absolute;
+    bottom: 20px;
+    right: -50px;
+    background-color: var(--border-color);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
 
 .main-project {
     width: 55%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 20%;
+    justify-content: right;
+    margin-left: 27%;
 }
 
 .work:hover {
@@ -164,15 +188,16 @@ main {
 /* Footer/Contact me section begins */
 footer {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    margin: 3%;
 }
 
 footer nav {
     margin: 7px 0;
     display: flex;
     justify-content: space-evenly;
+    font-size: 20px;
 }
 
 .fa {
