@@ -94,6 +94,7 @@ header nav ul li a:hover {
     border-radius: 7px;
     font-size: 25px;
     justify-content: flex-end;
+    color: white;
 }
 
 /* Bio section begins  */
@@ -240,7 +241,7 @@ footer h2 {
 }
 
 /* media query for 980px and smaller */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
 .container {
     padding: 30px;
 }
