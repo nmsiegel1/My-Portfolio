@@ -143,9 +143,16 @@ main {
     position: relative;
     padding: 10px;
     margin: 20px;
+    align-content: center;
+    display: flex;
+    /* flex: 1 1 wrap; */
 }
 
-  .text-block {
+.container img {
+    max-width: 100%;
+}
+
+.text-block {
     position: absolute;
     bottom: 20px;
     right: 0px;
@@ -156,7 +163,7 @@ main {
     text-align: center;
   }
 
-  .text-block-1 {
+  .text-block-main {
     position: absolute;
     bottom: 20px;
     right: -50px;
@@ -171,10 +178,16 @@ main {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     margin-left: 27%;
+    flex-shrink: 1;
 }
 
+.main-project img {
+    width: 600px;
+    height: 400px;
+    flex: 1;
+}
 .container:hover {
     opacity: 0.7;
 }
@@ -185,6 +198,8 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    background-color: var(--hover-text);
+    padding-top: 7px;
 }
 
 footer nav ul {
@@ -202,7 +217,7 @@ footer h2 {
 }
 
 .fa {
-    padding: 10px;
+    padding: 7px;
     font-size: 30px;
     width: 35px;
     text-align: center;
@@ -222,4 +237,78 @@ footer h2 {
 .fa-github {
     background: #171515;
     color: white;
+}
+
+/* media query for 980px and smaller */
+@media screen and (min-width: 1400px) {
+.container {
+    padding: 30px;
+}
+
+.container img {
+    width: 500px;
+    height: 400px;
+}
+
+.main-project img {
+    width: 800px;
+    height: 550px;
+}
+}
+
+@media screen and (max-width: 980px) {
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul {
+    text-align: center;
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.subtitle {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 25%
+}
+
+.container{
+    flex-direction: column;
+}
+
+.main-project {
+    align-content: center;
+}
+
+.main-project img {
+    height: 300px;
+    width: 400px;
+}
+}
+
+/* mediaquery for tablets and smaller styles for screens 768px and smaller */
+@media screen and (max-width: 768px) {
+.subtitle {
+    margin: 0%;
+}
+}
+
+@media screen and (max-width: 575px) {
+.main-project img {
+   height: 300px;
+   width: 400px;
+}
 }
