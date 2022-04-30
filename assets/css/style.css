@@ -149,9 +149,9 @@ main {
     /* flex: 1 1 wrap; */
 }
 
-.container img {
+/* .container img {
     max-width: 100%;
-}
+} */
 
 .text-block {
     position: absolute;
@@ -240,6 +240,7 @@ footer h2 {
     color: white;
 }
 
+
 /* media query for 980px and smaller */
 @media screen and (min-width: 1300px) {
 .container {
@@ -254,6 +255,18 @@ footer h2 {
 .main-project img {
     width: 800px;
     height: 550px;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header ul li a {
+    font-size: 25px;
+}
+
+.bio p {
+    font-size: 25px;
 }
 }
 
