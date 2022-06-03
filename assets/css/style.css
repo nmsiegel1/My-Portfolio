@@ -189,6 +189,12 @@ main {
     height: 400px;
     flex: 1;
 }
+
+.run-buddy img {
+    width: 400px;
+    height: 300 px;
+    flex: 1;
+}
 .container:hover {
     opacity: 0.7;
 }
@@ -247,7 +253,7 @@ footer h2 {
     padding: 30px;
 }
 
-.container img {
+.container img, .run-buddy img {
     width: 500px;
     height: 400px;
 }
