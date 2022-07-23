@@ -2,7 +2,7 @@
   --background-color: rgb(211, 227, 240);
   --primary-text: rgb(91, 80, 76);
   --secondary-text: rgb(49, 49, 28);
-  --border-color: rgb(59, 143, 73);
+  --border-color: rgb(17, 60, 21, 1);
   --hover-text: rgb(119, 156, 166, 0.45);
 }
 
@@ -74,20 +74,20 @@ header nav ul li a:hover {
   background-image: url("../Images/Mountains.jpeg");
   background-size: cover;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   background-attachment: fixed;
-  background-position: 65%;
-  padding: 200px;
+  background-position: 50%;
+  padding: 20px;
+  height: 800px;
 }
 
 .subtitle {
   border: 3px solid var(--border-color);
   background-color: var(--border-color);
   padding: 5px;
-  width: 28%;
-  margin: -12.5%;
+  width: auto;
   border-radius: 7px;
   font-size: 25px;
   justify-content: flex-end;
@@ -96,22 +96,30 @@ header nav ul li a:hover {
 
 /* Bio section begins  */
 
-
 .section-title {
   font-size: 40px;
 }
 
-.titlediv {
-  display: flex;
+/* .titlediv {
   width: 15%;
   border-right: 5px solid var(--border-color);
   margin-top: 10px;
   margin-bottom: 10px;
 }
+@include media-breakpoint-down(md) {
+  .titlediv {
+    border-bottom: 5px solid var(--border-color);
+    border-right: none;
+  }
+} */
+
+.skill-icons {
+  margin: 5px;
+}
 
 .contacts {
   display: flex;
-  border-bottom: 5px solid var(--border-color);
+  /* border-bottom: 5px solid var(--border-color); */
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -129,7 +137,6 @@ header nav ul li a:hover {
   width: 95%;
   margin: 25px;
 }
-
 
 /* Footer/Contact me section begins */
 footer {
@@ -155,7 +162,6 @@ footer h2 {
   text-align: center;
 }
 
-
 .fa:hover {
   opacity: 0.7;
 }
@@ -168,11 +174,16 @@ footer h2 {
   color: #171515;
 }
 
+.icons {
+  color: lavenderblush;
+}
+
 /* media query for 980px and smaller */
 @media screen and (min-width: 1300px) {
-  /* .container {
-    padding: 30px;
-  } */
+  .hero {
+    padding: 20px;
+    height: 800px;
+  }
 
   header h1 {
     font-size: 50px;
@@ -182,6 +193,10 @@ footer h2 {
     font-size: 25px;
   }
 
+  .bio {
+    font-size: 25px;
+  }
+}
 
 @media screen and (max-width: 980px) {
   header {
@@ -200,31 +215,11 @@ footer h2 {
     text-align: center;
     width: 100%;
   }
-
-  .hero {
-    width: 100%;
-  }
-
-  .subtitle {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    margin: 25%;
-  }
 }
 
 /* mediaquery for tablets and smaller styles for screens 768px and smaller */
 @media screen and (max-width: 768px) {
-  .subtitle {
-    margin: 0%;
+  .hero {
+    height: 700px;
   }
-
-  .titlediv {
-    border-bottom: 5px solid var(--border-color);
-    border-right: 0px;
-  }
-}
-
-@media screen and (max-width: 575px) {
- 
 }
